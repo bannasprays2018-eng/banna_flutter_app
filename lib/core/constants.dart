@@ -27,10 +27,9 @@ class AppColors {
 }
 
 class AppConstants {
-  // Set to local host for emulators (Android emulator redirects 10.0.2.2 to computer's localhost)
-  // iOS simulator can directly use 127.0.0.1
-  static const String baseApiUrlAndroid = 'http://10.0.2.2:8000';
-  static const String baseApiUrlIos = 'http://127.0.0.1:8000';
+  // Live Cloud Run backend endpoint (or switch to local http://10.0.2.2:8000 / http://127.0.0.1:8000 when running backend locally)
+  static const String baseApiUrlAndroid = 'https://banna-dashboard-server-974177573861.asia-south1.run.app';
+  static const String baseApiUrlIos = 'https://banna-dashboard-server-974177573861.asia-south1.run.app';
   
   // Default values
   static const double defaultPadding = 16.0;
